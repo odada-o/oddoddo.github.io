@@ -21,26 +21,36 @@
 }
 
 // btn
-.btn-g {
-    font-size: clamp(17px, 2vw, 20px);
-}
-.btn-primary {
+.btn-group {
     display: flex;
-    flex-shrink: 0;
+    gap: 10px;
+    .btn-g {
+        flex: 1;
+    }
+}
+.btn-g {
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background-color: $primary;
-    color: $white;
+    font-size: clamp(17px, 2vw, 20px);
     width: fit-content;
-    min-width: 240px;
     min-height: 64px;
     margin: 0 auto;
+    padding: 0 40px;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
     white-space: nowrap;
+}
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+}
+.btn-outline {
+    background: $white;
+    border: 1px solid $gray-500;
 }
 
 #header {
@@ -48,6 +58,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10000;
     display: flex;
     // border-bottom: 1px solid #e0e0e0;
 
@@ -368,12 +379,4 @@
 }
 .center {
     text-align: center;
-}
-
-.sec-g {
-    position: relative;
-    .container {
-        position: relative;
-        z-index: 4;
-    }
 }
