@@ -21,7 +21,6 @@
             display: block;
             font-weight: 600;
             font-size: 24px;
-            color: $primary;
         }
         h2 {
             display: block;
@@ -31,6 +30,7 @@
             line-height: 1.1;
             font-weight: 700;
             font-family: 'Poppins', sans-serif;
+            color: $primary;
         }
 
         p {
@@ -52,12 +52,12 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
-    background: #e1edff;
+    background: $secondary;
 }
 
 .sec-2 {
     padding-top: 140px;
-    background: $baseBackground;
+    background: $primary;
     .title {
         position: sticky;
         top: 0;
@@ -72,9 +72,9 @@
             font-weight: 700;
             letter-spacing: -1px;
             line-height: 1.2;
-            // color: #fff;
+            color: #fff;
             span {
-                // color: #a5b5d7;
+                color: $secondary;
             }
         }
     }
@@ -106,19 +106,19 @@
         }
         i {
             font-size: 30px;
-            color: $primary;
+            color: $secondary;
         }
         strong {
             display: block;
             margin-top: 20px;
             font-size: 18px;
             font-weight: 600;
-            // color: #fff;
+            color: #fff;
         }
         p {
             margin-top: 20px;
             font-size: 16px;
-            // color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.8);
         }
     }
 }
@@ -242,9 +242,7 @@
             font-weight: 700;
             letter-spacing: -1px;
             line-height: 1.2;
-            span {
-                color: #a5b5d7;
-            }
+            color: $primary;
         }
     }
     .pin-wrap {

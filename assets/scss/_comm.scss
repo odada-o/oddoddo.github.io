@@ -48,9 +48,13 @@
     background-color: $primary;
     color: $white;
 }
+.btn-yellow {
+    background-color: $secondary;
+    border: 1px solid $gray-200;
+}
 .btn-outline {
     background: $white;
-    border: 1px solid $gray-500;
+    border: 1px solid $gray-200;
 }
 
 #header {
