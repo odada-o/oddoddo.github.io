@@ -37,25 +37,20 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
         />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" />
         <link rel="stylesheet" href="https://kit.fontawesome.com/a6f17a0eaf.css" crossorigin="anonymous" />
         <link rel="stylesheet" href="./assets/css/style-particle.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/vendors/easings.js"></script>
-        <script src="./assets/js/scrolloverflow.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.extensions.min.js"></script>
         <!-- <script src="./assets/js/fullpage.extensions.min.js"></script> -->
-        <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
-        <!-- <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-        <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
         <script defer src="./assets/js/particles.js"></script>
         <script defer src="./assets/js/app.js"></script>
-        <!-- <script defer src="./assets/js/comm.js"></script> -->
-        <script defer src="./assets/js/main.js"></script>
+        <script defer src="./assets/js/comm.js"></script>
+        <!-- <script defer src="./assets/js/main.js"></script> -->
     </head>
     <body>
         <header id="header">
@@ -136,11 +131,11 @@
             <div class="section sec-3">
                 <div class="container">
                     <div class="title">
-                        <h2>요금안내</h2>
+                        <h2 data-aos="fade-in">요금안내</h2>
                     </div>
 
                     <div class="item-wrap">
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-in" data-aos-delay="50">
                             <div class="item1">
                                 <strong>OnePage</strong>
                                 <p>
@@ -166,7 +161,7 @@
                                 <a href="/" class="btn-g btn-primary">견적문의</a>
                             </div>
                         </div>
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-in" data-aos-delay="100">
                             <div class="item1">
                                 <strong>Basic</strong>
                                 <p>
@@ -192,7 +187,7 @@
                                 <a href="/" class="btn-g btn-primary">견적문의</a>
                             </div>
                         </div>
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-in" data-aos-delay="150">
                             <div class="item1">
                                 <strong>Business</strong>
                                 <p>
@@ -225,7 +220,7 @@
                 <div class="container">
                     <div class="col-left">
                         <div class="title">
-                            <h2>
+                            <h2 data-aos="fade-in">
                                 다양한 <br />
                                 <span>기능 제공</span>
                             </h2>
@@ -234,7 +229,7 @@
                     </div>
                     <div class="col-right">
                         <div class="content">
-                            <ul>
+                            <ul data-aos="fade-in" data-aos-delay="50">
                                 <li>
                                     <i class="fa-solid fa-regular fa-globe-pointer"></i>
                                     <strong>도메인 무료 등록<br />(12개월 제공)</strong>
@@ -296,42 +291,51 @@
                     </div>
                 </div>
             </div>
-            <div class="section sec-5">
-                <div class="container">
-                    <div class="title">
-                        <h2>
-                            <span>포트폴리오</span>
-                        </h2>
-                        <!-- <img src="./assets/main/SVG/img-sec2.svg" alt="" /> -->
-                    </div>
-                    <div class="pin-wrap">
-                        <div class="pin"></div>
-                        <div class="pin"></div>
-                        <div class="pin"></div>
-                        <div class="pin"></div>
-                        <div class="pin"></div>
-                        <div class="pin"></div>
-                    </div>
-
-                    <div class="sec-custom">
-                        <div class="intro-sec__hd type2">
-                            <!-- <div class="ico-box">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div> -->
-                            고객센터
+            <section class="section sec-5 horizontal">
+                <div class="title">
+                    <h2>포트폴리오</h2>
+                    <!-- <img src="./assets/main/SVG/img-sec2.svg" alt="" /> -->
+                </div>
+                <div class="pin-wrap">
+                    <div class="animation-wrap to-right">
+                        <div class="item"></div>
+                        <div class="item">
+                            <strong> 증권사 솔루션 점유율 1위의</strong>
                         </div>
-                        <div class="intro-sec__bd">
-                            <a href="tel:02-784-0701" class="link-tel"
-                                >010-3111-2469
-                                <span>(평일 09:00 ~ 18:00)</span>
-                            </a>
+                        <div class="item">
+                            <strong> 증권형 토근에 대한 이해와 관련 기술 확보 및</strong>
+                        </div>
+                        <div class="item">
+                            <strong>증권 거래소 수준의</strong>
+                        </div>
+                        <div class="item">
+                            <strong>자본 시장 및 금융 시장의 이해도</strong>
+                        </div>
+                        <div class="item">
+                            <strong>증권사 연계 시</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="custom-wrap">
+                <div class="sec-custom container">
+                    <div class="intro-sec__hd type2">
+                        <!-- <div class="ico-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div> -->
+                        고객센터
+                    </div>
+                    <div class="intro-sec__bd">
+                        <a href="tel:02-784-0701" class="link-tel"
+                            >02-784-0701
+                            <span>(평일 09:00 ~ 18:00)</span>
+                        </a>
 
-                            <div class="d-flex mt-4">
-                                <a href="#" class="link-kakao">
-                                    <img src="../assets/images/icon/logo-kakao.svg" alt="" /> 카카오톡 상담하기
-                                </a>
-                                <a href="#" class="link-faq">자주하는 질문 FAQ</a>
-                            </div>
+                        <div class="d-flex mt-4">
+                            <a href="#" class="link-kakao">
+                                <img src="../assets/images/icon/logo-kakao.svg" alt="" /> 카카오톡 상담하기
+                            </a>
+                            <a href="#" class="link-faq">자주하는 질문 FAQ</a>
                         </div>
                     </div>
                 </div>
